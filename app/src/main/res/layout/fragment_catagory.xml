@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    tools:context=".CatagoryFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="Please Select Food Catagory"
+        android:textSize="20dp"
+        android:layout_margin="15dp"
+        android:textStyle="bold"
+        android:background="#000"
+        android:textColor="#EFEDED"
+        android:fontFamily="@font/courgette"
+        android:gravity="center"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/catagory_fragmentlistview"/>
+
+
+</LinearLayout>

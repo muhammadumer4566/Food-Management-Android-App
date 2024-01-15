@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="380dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rectangle_background"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/userproduct_imageid"
+        android:layout_width="match_parent"
+        android:layout_height="201dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userproduct_name"
+        android:layout_marginTop="10dp"
+        android:text="Zinger burger"
+        android:textColor="#0C0C0C"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userproduct_discription"
+        android:text="Zinger burger is very nice and good spicy food burger"
+        android:textColor="#FAFBFB"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userproduct_price"
+        android:text="1500"
+        android:textColor="#0C0C0C"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    </LinearLayout>

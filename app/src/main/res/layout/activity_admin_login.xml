@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+    android:background="@drawable/rectangle_background"
+    android:layout_height="match_parent"
+    tools:context=".Admin_loginActivity">
+
+    <ImageView
+        android:id="@+id/imgview"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Admin Login Here"
+        android:textSize="25dp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:layout_marginBottom="18dp"
+        android:fontFamily="@font/courgette"/>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="290dp"
+        app:counterEnabled="true"
+        app:helperText="Required"
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/person"
+            android:id="@+id/login_Username1"
+            android:hint="Username"
+            android:maxLength="20"
+            android:textColor="#1E1D1D"
+            android:textSize="15sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        app:helperText="Required"
+        android:layout_marginTop="10dp"
+        app:counterEnabled="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/lock"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:id="@+id/Login_Password1"
+            android:maxLength="20"
+            android:textColor="#151414"
+            android:textSize="15sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="157dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/courgette"
+        android:text="SignIn"
+        android:onClick="login"
+        android:textColor="#ffff"
+        android:textSize="20sp"
+        app:backgroundTint="#000" />
+
+
+</LinearLayout>
